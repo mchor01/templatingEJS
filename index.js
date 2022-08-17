@@ -8,26 +8,34 @@ app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
   var title = "My Home Page";
-  var heading = "My Website";
+  var heading = "Micah's Website";
   res.render('pages/index',{ 
     'title':title,
     'heading':heading
   })
 
 })
-app.get('/about', (req, res) => {
-  var title = "My About Page";
-  var heading = "My Website";
+app.get('/bubbletea', (req, res) => {
+  var title = "World of Bubble Tea";
+  var heading = "World of Boba";
 
-  res.render('pages/about',{ 
+  res.render('pages/bubbletea',{ 
     'title':title,
     'heading':heading
   })
 })
-  app.get('/contact', (req, res) => {
-  var title = "My Contact Page";
-  var heading = "My Website";
-  res.render('pages/contact',{ 
+  app.get('/cars', (req, res) => {
+  var title = "My Favorite Cars";
+  var heading = "Micah's Favorite Cars";
+  res.render('pages/cars',{ 
+    'title':title,
+    'heading':heading
+  })
+  })
+app.get('/food', (req, res) => {
+  var title = "My Favorite Food";
+  var heading = "Micah's Favorite Food";
+  res.render('pages/food',{ 
     'title':title,
     'heading':heading
   })
